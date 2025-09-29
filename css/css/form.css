@@ -6,8 +6,24 @@
 }
 
 h1 {
-  text-align: center;
-}
+  background-color: #ffb300;  /* Fondo Gris */
+  border-top: 5px dashed #704dc2;
+  border-left: 5px dashed #704dc2;
+  border-right: 5px dashed #704dc2;
+  border-bottom: 5px dashed #704dc2;
+  /* Borde del cuadro con rayas azules segmentadas */
+  border-radius: 3rem;  /* Cuadro en forma de bandita */
+  padding: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 2.5rem; /* Tamaño de fuente */
+  color: #f8f4f4; /* Color del texto */
+  letter-spacing: 11px; /* Espaciado entre letras */
+  }
 
 .wrapper {
   height: 100vh;
@@ -59,4 +75,18 @@ h1 {
 
 .button:hover {
   background-color: #0066cc;
+}
+
+a {
+ background-color: #c4c1c1; /* Fondo Gris */
+ padding: 1.5rem;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    
+ font-size: 0.85rem; /* Tamaño de fuente */
+ letter-spacing: 1px; /* Espaciado entre letras */
+ color: #2e0cf0; /* Color del texto */
 }
