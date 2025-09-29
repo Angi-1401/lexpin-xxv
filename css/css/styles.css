@@ -1,5 +1,19 @@
 /* EXTERNAL CSS */
 
+header {
+  background-color: #c9c2c1; /* Color del fondo del encabezado */
+  color: #1818dd; /* Título del encabezado de color azul */
+  padding: 0.5rem;
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+  font-size: 0.85rem; /* Tamaño de fuente */
+  letter-spacing: 1px;  /* Espaciado entre letras */
+}
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial;
@@ -51,4 +65,19 @@ pre.code {
   margin: auto;
   padding: 20px;
   border: 8px solid greenyellow;
+}
+
+footer {
+  background-color: #c9c2c1; /* Fondo Gris */
+  color: #2e0cf0; /* Color del texto */
+  padding: 0.5rem;
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+  font-size: 0.85rem;  /* Tamaño de fuente */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px; /* Espaciado entre letras */
 }
