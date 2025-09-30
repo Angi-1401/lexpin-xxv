@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: rgb(152, 255, 233);
+        padding: 1rem;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid black; */
+      }
+
+      .logo {
+        font-weight: bold;
+      }
+
+      .strike {
+        text-decoration: line-through;
+      }
+
+      .nav-items {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(19, 132, 127);
+      }
+
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          We
+          <span class="strike">don't</span>
+          💖 Flexbox
+        </div>
+        <div class="nav-items">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">To love Flexbox</a>
+          <a href="#" class="nav-link">To hate Flexbox</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
