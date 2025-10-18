@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Breve descripción de la página">
+  <meta name="author" content="Tu Nombre">
+  <meta name="keywords" content="palabra1, palabra2, palabra3">
+  <meta name="robots" content="index, follow">
+  <!-- Fuente Google Fonts minimalista -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- links de Estilos -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../css/tarea.css">
+  <!-- Titulo de la pagina -->
+  <title>Tareas - Lexpin ✌️</title>
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="navbar-container">
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Lexpin</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="./tarea.html" class="nav-link">Tareas</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="main-container">
+    <section class="inicio" id="home">
+      <h1>Bienvenido a Lexpin</h1>
+      <p>Esta será el área de visualización de las tareas.</p>
+      <a href="../index.html" class="btn">Galeria de Proyectos</a>
+    </section>
+    <section class="galeria">
+      <div class="galeria-container">
+        <h2>Tareas realizadas</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <img src="../assets/img/formulario-Kev.png" alt="Tarea formulario de Kevin Pérez">
+            <h3>Tarea de formulario de Kevin Pérez</h3>
+            <p>Formulario de contacto con temática espacial</p>
+            <a href="./form_kev.html" class="btn" target="_blank" rel="noopener noreferrer">Ver Más</a>
+          </article>
+          <!-- Agrega más cards aquí como esta, por ejemplo para otras tareas -->
+          <!-- <article class="card"> ... </article> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="../js/menu-toggle.js"></script>
+</body>
+
+</html>

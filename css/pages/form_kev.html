@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Breve descripción de la página">
+  <meta name="author" content="Tu Nombre">
+  <meta name="keywords" content="palabra1, palabra2, palabra3">
+  <meta name="robots" content="index, follow">
+  <!-- links de Estilos -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../css/kev.css">
+  <!-- Titulo de la pagina -->
+  <title>Form - Kev ✌️</title>
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="navbar-container">
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Lexpin</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class="form-container">
+      <h2>
+        Contacto
+      </h2>
+      <p>
+        Si tienes alguna pregunta o comentario, no dudes en enviarnos un mensaje a través del siguiente formulario.
+      </p>
+      <form action="mailto:lexpin@lexpin.com" method="post">
+        <fieldset class="textbox">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Cual es tu nombre?" required>
+        </fieldset>
+        <fieldset class="textbox">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Me indicas tu correo electronico?" required>
+        </fieldset>
+        <fieldset class="textbox">
+          <label for="message"></label>
+          <textarea id="message" name="message" placeholder="tienes alguna pregunta o comentario?" required></textarea>
+        </fieldset>
+        <input type="submit" value="Enviar" class="btn">
+      </form>
+    </div>
+  </main>
+  <script src="../js/menu-toggle.js"></script>
+</body>
+
+</html>

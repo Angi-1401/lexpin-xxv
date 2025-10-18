@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS: inline, internal, external — Examples</title>
-    <!-- External stylesheet (used by the external example section) -->
-    <link rel="stylesheet" href="./css/styles.css" />
 
-    <!-- Internal CSS example (used by the internal example section) -->
-    <style>
-      /* Internal-box used for the internal CSS example */
-      .internal-box {
-        border: 8px solid coral;
-        padding: 20px;
-        background: #fff7f6;
-        color: #8b2d2d;
-        border-radius: 4px;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS: inline, internal, external — Examples</title>
+  <!-- External stylesheet (used by the external example section) -->
+  <link rel="stylesheet" href="./css/styles.css" />
 
-  <body>
-    <main>
-      <header>
-        <h1>CSS: inline, internal, and external styles</h1>
-        <p class="lead">
-          Short explanation and live examples showing how to apply CSS using
-          three different methods.
-        </p>
-      </header>
+  <!-- Internal CSS example (used by the internal example section) -->
+  <style>
+    /* Internal-box used for the internal CSS example */
+    .internal-box {
+      border: 8px solid coral;
+      padding: 20px;
+      background: #fff7f6;
+      color: #8b2d2d;
+      border-radius: 4px;
+    }
+  </style>
+</head>
 
-      <section class="example" id="inline">
-        <h2>1. Inline CSS</h2>
-        <p class="help">
-          Inline styles are applied directly on an element using the
-          <code>style</code>
-          attribute. They have the highest specificity for that element.
-        </p>
+<body>
+  <main>
+    <header class="header-container">
 
-        <div class="rendered">
-          <!-- Rendered inline example -->
-          <div
-            style="
+      <div class="navbar-container">
+        <nav class="navbar">
+          <a href="../index.html" class="nav-logo">Lexpin</a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="./pages/tareas.html" class="nav-link">tarea</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+    <section class="inline">
+      <h1>CSS: inline, internal, and external styles</h1>
+      <p class="lead">
+        Short explanation and live examples showing how to apply CSS using
+        three different methods.
+      </p>
+    </section>    
+    <section class="example" id="inline">
+      <h2>1. Inline CSS</h2>
+      <p class="help">
+        Inline styles are applied directly on an element using the
+        <code>style</code>
+        attribute. They have the highest specificity for that element.
+      </p>
+
+      <div class="rendered">
+        <!-- Rendered inline example -->
+        <div style="
               border: 4px dashed rebeccapurple;
               padding: 16px;
               border-radius: 6px;
             ">
-            <p style="margin: 0; color: rebeccapurple; font-weight: 600">
-              This box is styled with inline CSS.
-            </p>
-          </div>
+          <p style="margin: 0; color: rebeccapurple; font-weight: 600">
+            This box is styled with inline CSS.
+          </p>
         </div>
+      </div>
 
-        <pre class="code">
+      <pre class="code">
 &lt;div style="border: 4px dashed rebeccapurple; padding: 16px;"&gt;
   &lt;p style="color: rebeccapurple;"&gt;
     This box is styled with inline CSS.
   &lt;/p&gt;
 &lt;/div&gt;
         </pre>
-      </section>
+    </section>
 
-      <section class="example" id="internal">
-        <h2>2. Internal (Embedded) CSS</h2>
-        <p class="help">
-          Internal CSS is placed inside a
-          <code>&lt;style&gt;</code>
-          tag in the document head. It's useful for page-specific styles without
-          creating a separate file.
-        </p>
+    <section class="example" id="internal">
+      <h2>2. Internal (Embedded) CSS</h2>
+      <p class="help">
+        Internal CSS is placed inside a
+        <code>&lt;style&gt;</code>
+        tag in the document head. It's useful for page-specific styles without
+        creating a separate file.
+      </p>
 
-        <div class="rendered">
-          <!-- Uses the .internal-box class defined in the &lt;style&gt; above -->
-          <div class="internal-box">
-            <p style="margin: 0">
-              This box is styled using internal (embedded) CSS.
-            </p>
-          </div>
+      <div class="rendered">
+        <!-- Uses the .internal-box class defined in the &lt;style&gt; above -->
+        <div class="internal-box">
+          <p style="margin: 0">
+            This box is styled using internal (embedded) CSS.
+          </p>
         </div>
+      </div>
 
-        <pre class="code">
+      <pre class="code">
 &lt;!-- inside &lt;head&gt; --&gt;
 &lt;style&gt;
 .internal-box {
@@ -92,61 +104,62 @@
 &lt;!-- in body --&gt;
 &lt;div class="internal-box"&gt;…&lt;/div&gt;
         </pre>
-      </section>
+    </section>
 
-      <section class="example" id="external">
-        <h2>3. External CSS</h2>
-        <p class="help">
-          External styles live in a separate .css file and are linked with
-          <code>&lt;link rel="stylesheet" href="..."&gt;</code>
-          . This is the recommended approach for site-wide styles and better
-          caching.
-        </p>
+    <section class="example" id="external">
+      <h2>3. External CSS</h2>
+      <p class="help">
+        External styles live in a separate .css file and are linked with
+        <code>&lt;link rel="stylesheet" href="..."&gt;</code>
+        . This is the recommended approach for site-wide styles and better
+        caching.
+      </p>
 
-        <div class="rendered">
-          <!-- The project's external stylesheet defines the .box class (see ./css/styles.css) -->
-          <div class="external-box">
-            <p style="margin: 0">
-              This box is styled using the external stylesheet
-              <br />
-              (
-              <code>./css/styles.css</code>
-              ).
-            </p>
-          </div>
+      <div class="rendered">
+        <!-- The project's external stylesheet defines the .box class (see ./css/styles.css) -->
+        <div class="external-box">
+          <p style="margin: 0">
+            This box is styled using the external stylesheet
+            <br />
+            (
+            <code>./css/styles.css</code>
+            ).
+          </p>
         </div>
+      </div>
 
-        <pre class="code">
+      <pre class="code">
 &lt;!-- in &lt;head&gt; --&gt;
 &lt;link rel="stylesheet" href="./css/styles.css"&gt;
 
 &lt;!-- in body --&gt;
 &lt;div class="box"&gt;…&lt;/div&gt;
         </pre>
-      </section>
+    </section>
 
-      <section class="example">
-        <h2>Notes & tips</h2>
-        <ul>
-          <li>
-            Inline styles are convenient for quick overrides but are harder to
-            maintain and don't separate concerns.
-          </li>
-          <li>
-            Internal styles are good for single-page overrides or demos, but
-            prefer external files for multi-page sites.
-          </li>
-          <li>
-            External stylesheets provide reuse, caching, and cleaner HTML
-            structure.
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <hr />
-      <a href="./../index.html">Return to the main page.</a>
-      <p>Made with ❤️ by LEXPIN</p>
-    </footer>
-  </body>
+    <section class="example">
+      <h2>Notes & tips</h2>
+      <ul>
+        <li>
+          Inline styles are convenient for quick overrides but are harder to
+          maintain and don't separate concerns.
+        </li>
+        <li>
+          Internal styles are good for single-page overrides or demos, but
+          prefer external files for multi-page sites.
+        </li>
+        <li>
+          External stylesheets provide reuse, caching, and cleaner HTML
+          structure.
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <hr />
+    <a href="./../index.html">Return to the main page.</a>
+    <p>Made with ❤️ by LEXPIN</p>
+  </footer>
+</body>
+
 </html>
