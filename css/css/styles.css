@@ -9,6 +9,52 @@ body {
   color: #111;
 }
 
+/* ---------------------------------------------------- */
+/* Estilo para header por Kev */
+
+/* Header */
+.header-container {
+  background: #252525;
+  border-bottom: 1px solid #333;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #4da8ff; /* Azul claro para hover en modo oscuro */
+}
+
+/* ----------------------------------------------------------- */
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -52,3 +98,4 @@ pre.code {
   padding: 20px;
   border: 8px solid greenyellow;
 }
+
