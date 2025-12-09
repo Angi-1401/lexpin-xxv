@@ -14,7 +14,7 @@
       <p>This is my first paragraph.</p>
 
       <hr class="w-1/2 mt-2" />
-            
+
       <div class="flex flex-col gap-2 mt-2">
         <ul id="main-list">
           <li name="qwerty">Etiquette 1</li>
@@ -48,17 +48,45 @@
         <div class="flex p-4 bg-green-500">🥔</div>
 
         <div class="flex gap-2">
-          <select name="div-selector" id="div-selector" class="border border-gray-300 p-1.5 w-[150px]">
+          <select
+            name="div-selector"
+            id="div-selector"
+            class="border border-gray-300 p-1.5 w-[150px]">
             <option value="0">Select a div</option>
             <option value="1">Div 1</option>
             <option value="2">Div 2</option>
             <option value="3">Div 3</option>
           </select>
-          <button id="btn-change-color" type="button" class="bg-blue-500 text-white px-4 py-2 rounded">Change Color</button>
+          <button
+            id="btn-change-color"
+            type="button"
+            class="bg-blue-500 text-white px-4 py-2 rounded">
+            Change Color
+          </button>
         </div>
       </div>
 
-      
+      <hr class="w-1/2 mt-2" />
+
+      <form action="#" class="flex flex-col gap-2">
+        <input
+          type="text"
+          id="text-to-store"
+          name="text-to-store"
+          class="border border-gray-300" />
+        <input
+          type="submit"
+          value="Save to Local Storage"
+          id="save-to-local-storage"
+          class="bg-blue-500 text-white px-4 py-2 rounded text-sm" />
+      </form>
+      <div>
+        <p>
+          The value saved was:
+          <br />
+          <span id="local-storage-value" class="font-bold"></span>
+        </p>
+      </div>
     </div>
     <!-- Internal Javascript -->
     <!-- <script>
@@ -74,5 +102,6 @@
     <script src="./js/functions.js"></script>
     <script src="./js/classes.js"></script> -->
     <script src="./js/dom.js"></script>
+    <script src="./js/local-storage.js"></script>
   </body>
 </html>
