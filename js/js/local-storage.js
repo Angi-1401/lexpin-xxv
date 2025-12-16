@@ -20,3 +20,9 @@ saveButton.addEventListener("click", (e) => {
 
 const storedText = localStorage.getItem("textData");
 displaySpan.textContent = storedText ? storedText : "No data found.";
+
+const array = ["apple", "banana", "cherry"];
+localStorage.setItem("fruits", JSON.stringify(array));
+
+const retrieveArray = JSON.parse(localStorage.getItem("fruits"));
+console.log(retrieveArray);

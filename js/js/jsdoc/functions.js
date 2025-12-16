@@ -9,6 +9,7 @@
 
 /**
  * Greets the user with a simple message.
+ * @author Angélica Rivas
  * 
  * @returns {void}
  */
@@ -20,6 +21,7 @@ function greet() {
 
 /**
  * Greets the user by their name.
+ * @author Angélica Rivas
  * 
  * @param {string} name - The name of the user to greet.
  * @returns {void}

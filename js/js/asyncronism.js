@@ -51,6 +51,7 @@ fetch("https://rickandmortyapi.com/api/character/1,2")
     console.error("Fetch error:", error);
   });
 
+  
 async function getAllCharacters() {
   try {
     const response = await fetch("https://rickandmortyapi.com/api/character");
