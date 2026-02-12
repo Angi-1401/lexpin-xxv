@@ -1,0 +1,13 @@
+import Image from "next/image";
+
+export default function ImageItem({ src, alt, author }) {
+  return (
+    <div className="border rounded overflow-hidden shadow-lg">
+      <Image src={src} alt={alt} className="w-full h-48 object-cover" width={500} height={300} />
+      <div className="p-4">
+        <h3 className="text-lg font-semibold">{alt}</h3>
+        <p className="text-gray-600 text-sm">By {author}</p>
+      </div>
+    </div>
+  );
+}
