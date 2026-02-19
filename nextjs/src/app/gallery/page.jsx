@@ -7,10 +7,10 @@ export default function Gallery() {
     <div className="flex flex-col p-4">
       <h1 className="text-2xl font-bold mb-4">Gallery Page</h1>
       <p>This is the gallery route of the application.</p>
-
       <ImageGallery />
-
-      <Link href="/" className="hover:text-blue-500 hover:underline">
+      <Link
+        href="/"
+        className="hover:text-blue-600 dark:hover:text-blue-400 dark:hover:underline">
         Go to home
       </Link>
     </div>

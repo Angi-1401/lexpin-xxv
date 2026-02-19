@@ -6,10 +6,10 @@ import { useState } from "react";
 import Button from "@/components/atoms/Button";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0); // let count = 0
 
   function handleClick() {
-    setCount(count + 1);
+    setCount(count + 1); // count = count + 1
   }
 
   return (
@@ -19,16 +19,15 @@ export default function Home() {
         Explore a collection of amazing images in this app built with Next.js
         and Tailwind CSS.
       </p>
-
       <p>This is the main route of the application.</p>
-
       <Button
-        className="px-4 py-2 bg-blue-500 text-white rounded w-fit"
+        className="px-4 py-2 bg-blue-600 dark:bg-blue-400 text-white rounded w-fit"
         onClick={handleClick}>
         Click me! Count: {count}
       </Button>
-
-      <Link href="/gallery" className="hover:text-blue-500 hover:underline">
+      <Link
+        href="/gallery"
+        className="hover:text-blue-600 dark:hover:text-blue-400 dark:hover:underline">
         Go to gallery
       </Link>
     </div>

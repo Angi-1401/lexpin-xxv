@@ -6,9 +6,11 @@ export default function ImageGrid({ images }) {
       {images.map((img) => (
         <ImageItem
           key={img.id}
-          src={img.src}
-          alt={img.alt}
+          src={img.download_url}
+          alt={`Image by ${img.author}`}
           author={img.author}
+          width={img.width > 500 ? 500 : img.width}
+          height={img.height > 300 ? 300 : img.height}
         />
       ))}
     </div>
