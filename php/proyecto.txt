@@ -1,0 +1,33 @@
+Diseñar una interfaz utilizando php que permita llevar la nómina de los trabajadores de una empresa.
+
+El sitio debe contar con las siguientes características:
+
+- Cada usuario se clasifica en alguno de los siguientes departamentos:
+  - Desarrollo
+  - Diseño
+  - QA
+  - Marketing
+  - Contabilidad y Ventas
+  - RRHH
+
+  Sólo el personal perteneciente a RRHH deberá ser capaz de:
+    1. Crear nuevos empleados (Nombre, Apellido, Fecha de Ingreso)
+    2. Visualizar la lista de empleados creados.
+    3. Modificar y eliminar empleados.
+
+  Cualquier usuario (independietemente del departamento al que pertenezca) deberá ser capaz de visualizar su información propia:
+    - Información personal (Nombre, Apellido, Fecha de Ingreso)
+    - Información laboral (Departamento, Salario, Bonos)
+    - Salario total (Salario + Bonos).
+    - Renumeracion por trabajo realizado en días festivos (si corresponde).
+    - Renumeracion por trabajo realizado en horas extras (si corresponde).
+
+- El sitio debe contar con un sistema de autenticación para que los usuarios puedan iniciar sesión y acceder a su información personal y laboral.
+
+- El estudiante deberá diseñar una base de datos acordemente a las necesidades del proyecto utilizando MySQL.
+
+- El sitio debe ser desarrollado utilizando PHP para el backend y HTML/CSS para el frontend. Se pueden utilizar frameworks o librerías adicionales si se desea.
+
+- El proyecto deberá contener un archivo sql con la estructura de la base de datos y un INSERT con al menos 1 empleado perteneciente a RRHH para pruebas.
+
+Fecha de entrega: 2026/04/30
