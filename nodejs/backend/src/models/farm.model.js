@@ -17,13 +17,11 @@ const farmSchema = new mongoose.Schema(
     crops: [
       {
         type: String,
-        required: true,
       },
     ],
     animals: [
       {
         type: String,
-        required: true,
       },
     ],
   },

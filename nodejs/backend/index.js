@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
 
 import farmRoutes from "./src/routes/farm.routes.js";
 
@@ -14,9 +15,16 @@ mongoose
   });
 
 const app = express();
-const port = 3000;
+const port = 3001;
+
+const corsOptions = {
+  origin: "http://localhost:3000",
+  optionsSuccessStatus: 200,
+};
 
 app.use(express.json());
+app.use(cors(corsOptions));
+
 app.use("/farm", farmRoutes);
 
 app.listen(port, () => {

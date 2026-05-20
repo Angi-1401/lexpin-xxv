@@ -1,0 +1,22 @@
+2026-05-24
+
+Desarrollar un api con express, nodejs y mongodb para gestionar las reservaciones de un hotel.
+
+El api debe permitir realizar las siguientes operaciones:
+
+- Crear, leer, actualizar y eliminar clientes. Las reservaciones se realizarán a nombre de un cliente registrado.
+
+- Crear, leer, actualizar y eliminar habitaciones. Cada habitación debe tener un número único y un tipo (individual, doble, suite).
+
+- Crear, leer, actualizar y eliminar reservaciones.
+  Cada reservación debe incluir la fecha de entrada, fecha de salida, número de habitación y el cliente asociado.
+  La fecha de salida debe ser posterior a la fecha de entrada.
+  No se deben permitir reservaciones para habitaciones que ya estén reservadas en las fechas seleccionadas.
+
+- Consultar la disponibilidad de habitaciones para un rango de fechas específico.
+
+- Consultar las reservaciones de un cliente específico.
+
+La api deberá ser consultable a través de herramientas externas como Postman o Insomnia.
+
+Opcionalmente, agregar frontend uwu
